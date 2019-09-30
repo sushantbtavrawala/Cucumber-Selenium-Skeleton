@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.CaptureScreenshot;
 import utils.DriverInitiate;
+
+import java.io.IOException;
 
 public class loginToApplication extends DriverInitiate {
 
@@ -32,8 +35,8 @@ public class loginToApplication extends DriverInitiate {
         find(password).sendKeys(pass);
     }
 
-    public static void continue_Button()
-    {
+    public static void continue_Button() throws IOException {
+        CaptureScreenshot.Screenshot(driver, "Capture Login Page");
         find(continuebutton).click();
     }
 
@@ -43,6 +46,5 @@ public class loginToApplication extends DriverInitiate {
         WebDriverWait wait = new WebDriverWait(driver, 50);//Wait Function Use
         WebElement wait2 = wait.until(ExpectedConditions.elementToBeClickable(user_Name));
     }
-
 
 }

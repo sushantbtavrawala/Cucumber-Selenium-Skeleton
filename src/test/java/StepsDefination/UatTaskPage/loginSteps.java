@@ -16,6 +16,7 @@ public class loginSteps {
     public void i_enter_and(String username, String password) throws Throwable {
         loginToApplication.enter_Username(username);
         loginToApplication.enter_password(password);
+
         loginToApplication.continue_Button();
     }
 
