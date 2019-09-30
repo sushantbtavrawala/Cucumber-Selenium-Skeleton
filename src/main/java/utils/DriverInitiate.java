@@ -13,7 +13,7 @@ public abstract class DriverInitiate {
     public static WebDriver getDriver() {
         if (driver == null) {
             driver = BrowserFactory.apply();
-        //driver.manage().window().maximize();
+
         }
 
         return driver;
