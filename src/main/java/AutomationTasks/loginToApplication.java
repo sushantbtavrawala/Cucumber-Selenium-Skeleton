@@ -38,11 +38,10 @@ public class loginToApplication extends DriverInitiate {
         CaptureScreenshot.Screenshot(driver, "Capture Login Page");
         find(continuebutton).click();
     }
-    
+
     public static void waitforelement()
     {
         WebDriverWait wait = new WebDriverWait(driver, 50);//Wait Function Use
         WebElement wait2 = wait.until(ExpectedConditions.elementToBeClickable(user_Name));
     }
-
 }

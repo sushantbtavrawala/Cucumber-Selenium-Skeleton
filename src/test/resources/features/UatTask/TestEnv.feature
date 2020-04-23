@@ -4,7 +4,6 @@ Feature: Simply login journey
   I want a valid identifier
   So that I can call another service
 
-
   Scenario Outline: 1- simple login journey
 
     Given I am on the webpage
