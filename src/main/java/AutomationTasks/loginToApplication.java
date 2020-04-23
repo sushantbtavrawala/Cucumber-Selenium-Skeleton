@@ -23,7 +23,6 @@ public class loginToApplication extends DriverInitiate {
     driver.get(url);
     }
 
-
     public static void enter_Username(String uname)
     {
         waitforelement();
@@ -39,8 +38,7 @@ public class loginToApplication extends DriverInitiate {
         CaptureScreenshot.Screenshot(driver, "Capture Login Page");
         find(continuebutton).click();
     }
-
-
+    
     public static void waitforelement()
     {
         WebDriverWait wait = new WebDriverWait(driver, 50);//Wait Function Use
