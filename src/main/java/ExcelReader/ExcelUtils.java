@@ -26,7 +26,6 @@ public class ExcelUtils {
         }
     }
 
-
     public int getRowCount()  {
         int rowCount =0;
 
@@ -41,9 +40,7 @@ public class ExcelUtils {
             exp.printStackTrace();
         }
         return rowCount;
-
     }
-
 
     public int getColCount()  {
         int colCount=0;

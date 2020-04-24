@@ -13,7 +13,6 @@ public class loginToApplication extends DriverInitiate {
 
 
     public static String url = "https://admin.easqa.dwp.gov.uk";
-
     public static By user_Name=By.id("Username");
     public static By password=By.id("OTP");
     public static By continuebutton= By.id("continue");
