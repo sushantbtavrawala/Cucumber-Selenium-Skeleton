@@ -11,7 +11,6 @@ public class ExcelDataProvider {
         System.out.println(username+"|"+password+"|"+email+"|");
     }
 
-
     @DataProvider(name="test1")
     public Object[][] getData()
     {
@@ -21,7 +20,6 @@ public class ExcelDataProvider {
         Object data[][] = testData(excelPath, "Sheet1");
         return data;
     }
-
 
     public Object[][] testData(String excelPath, String sheetName)
     {
